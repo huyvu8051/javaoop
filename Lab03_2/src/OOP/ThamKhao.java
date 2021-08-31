@@ -51,8 +51,11 @@ public class ThamKhao extends AnPham {
 		super.output();
 		System.out.printf(" %20s |", linhVuc);
 		
-		chuongSachs.stream()
-		.forEach(ChuongSach::output);
+// 		chuongSachs.stream()
+// 		.forEach(ChuongSach::output);
+		for(ChuongSach chuongSach : chuongSachs) {
+			chuongSach.output();
+		}
 	}
 
 	public String getLinhVuc() {
