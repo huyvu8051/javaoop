@@ -56,7 +56,11 @@ public class Main {
 		System.out.println(ap8.cungLoaiVaTacGia(ap82));
 
 		// 9
-		dsAnPham.stream().forEach(AnPham::tinhTongTien);
+		// dsAnPham.stream().forEach(AnPham::output);
+		
+		for(AnPham anPham : dsAnPham) {
+			anPham.output();
+		}
 
 		System.out.println("9\n" + AnPham.tongTien);
 
